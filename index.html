@@ -9,7 +9,13 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>David Barbosa</h1>
+        <div class="header-container">
+        <div class="Titulo">
+        <h1>David BS</h1>
+        
+        </div>
+        
+        <div class="nav-foto">
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
@@ -17,40 +23,99 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+
+        <!-- Foto do GitHub -->
+        <img src="https://avatars.githubusercontent.com/u/238369067?s=400&u=a22aab54859d95169681d78c35fab750c43a77b9&v=4"
+        alt="foto de perfil do github"
+        class="foto-perfil">
+    
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </header>
 
     <!-- Seção Sobre Mim -->
     <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou desenvolvedor web, apaixonado por criar sites e aplicações modernas.</p>
+    <h2> <p style="font-size: 3rem; font-weight: bold;">Olá! Eu sou o David, Bem-vindo ao meu portfólio 🌐</p> </h2>
+    
+    <div class="Habilidades tags-iniciais">
+    <p><i class="fa-solid fa-briefcase"></i> Tec Adm</p>
+    <p><i class="fa-solid fa-bug"></i> QA</p>
+    <p><i class="fa-brands fa-python"></i> Python</p>
+    <p><i class="fa-brands fa-js"></i> Js</p>
+</div>
+
+
+    <h2 class="titulo-sobre">Sobre mim</h2>
+
+        
+        
+    <p style="font-size: 1.3rem; font-weight: bold;"> Sou de Ilhabela, formado em tec de adm, dev web, apaixonado por criar sites e aplicações modernas.
+Entusiasta da tecnologia, a mais de 14 anos navegando nesse imenso mundo da Web.
+Atualmente buscando novas habilidades, Softskills e Hardskill.</p>
     </section>
+
+<!-- Seção Habilidades -->
+ <section id="habilidades" class="Habilidades">
+    <h2 class="titulo-sobre">Habilidades</h2>
+    <p><i class="fa-brands fa-python"></i> Python</p>
+    <p><i class="fa-brands fa-js"></i> JavaScript</p>
+    <p><i class="fa-brands fa-html5"></i> HTML5</p>
+    <p><i class="fa-brands fa-css3-alt"></i> CSS3</p>
+    <p><i class="fa-solid fa-bug"></i> QA / Testes</p>
+    <p><i class="fa-solid fa-robot"></i> Automação</p>
+    <p><i class="fa-brands fa-git-alt"></i> Git</p>
+    <p><i class="fa-brands fa-github"></i> GitHub</p>
+    <p><i class="fa-solid fa-code"></i> VS Code</p>
+</section>
+
+ </section>
 
     <!-- Seção Projetos -->
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto.</p>
-        </div>
-        <div class="projeto">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto.</p>
-        </div>
-    </section>
+<section id="projetos">
+  <h2 class="titulo-sobre">Projetos</h2>
+
+  <div class="projetos-container">
+
+    <div class="projeto">
+      <img src="imagens/projeto1.png" alt="Projeto 1">
+      <h3>💻 Sistema de Login em Python</h3>
+      <p>Aplicação simples com autenticação de usuários e salvamento de dados em CSV.</p>
+      <a href="https://github.com/seuusuario/sistema-login" target="_blank">🔗 Ver no GitHub</a>
+    </div>
+
+    <div class="projeto">
+      <img src="imagens/projeto2.png" alt="Projeto 2">
+      <h3>🌐 Portfólio Pessoal</h3>
+      <p>Meu site pessoal feito com HTML, CSS e JavaScript, apresentando minhas habilidades e contatos.</p>
+      <a href="https://seusite.github.io" target="_blank">🌎 Ver Online</a>
+    </div>
+
+    <div class="projeto">
+      <img src="imagens/projeto3.png" alt="Projeto 3">
+      <h3>⚙️ Automação com Python</h3>
+      <p>Script que automatiza o envio de relatórios diários por e-mail usando a biblioteca smtplib.</p>
+      <a href="https://github.com/seuusuario/automacao-python" target="_blank">🔗 Ver no GitHub</a>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="form-contato">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <section id="contatos" class="contatos">
+    <h2 class="titulo-sobre">Contatos</h2>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:seuemail@gmail.com">davidbbsouza@gmail.com</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/david-barbosa-de-souza-152085384" target="_blank">LinkedIn</a></p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Davidbsza" target="_blank">GitHub</a></p>
+    <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5512992267683" target="_blank">WhatsApp</a>
+    </p>
+</section>
+
 
     <footer>
-        <p>&copy; 2025 David Barbosa</p>
+        <p>&copy; 2025 David Barbosa • Desenvolvido com 💻 e ☕</p>
     </footer>
 
     <script src="script.js"></script>

@@ -6,30 +6,110 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #202243;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+header .header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* distribui: nome à esquerda, menu ao centro, imagem à direita */
+    padding: 20px 40px;
+    flex-wrap: wrap;
 }
 
-header nav ul {
+
+/* Título à esquerda */
+.titulo h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.titulo h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #cce0ff;
+}
+
+/* Agrupa o menu e a foto na direita */
+.nav-foto {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espaço entre menu e imagem */
+}
+
+/* Menu */
+.nav-foto nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-header nav ul li a {
+.nav-foto nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.foto-perfil {
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+.titulo-sobre {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3d8cdc; /* cor que você quiser */
+    margin-bottom: 15px;
+}
+
+
+/* ======= Seções ======= */
+section {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    color: #7cc3fa;
+    margin-bottom: 1rem;
 }
 
 section {
@@ -39,37 +119,117 @@ section {
 }
 
 .projeto {
-    background: white;
+    background: #1f1f1f;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px #1f1f1f;
+}
+
+/* ======= Habilidades ======= */
+.Habilidades p {
+    display: inline-block;
+    background-color: #0d0d0d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Habilidades p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.Habilidades i {
+    margin-right: 8px;
+}
+
+.tags-iniciais {
+    margin-top: 10px;
+}
+
+
+/* ======= Contato ======= */
+.contatos p {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+}
+
+.contatos a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+.contatos a:hover {
+    text-decoration: underline;
+}
+
+
+/* ======= Formulário ======= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    max-width: 400px;
 }
 
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    resize: none;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #00adb5;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #007b83;
 }
 
 footer {
+   /* ======= Rodapé ======= */
+
+    background-color: #0d0d0d;
+    color: #aaa;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* Seção SOBRE MIM */
+#sobre {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left; /* ou center, se quiser centralizar o texto */
+}
+
+/* Título da seção */
+#sobre h2 {
+    font-size: 2.5rem; /* AQUI você altera o tamanho do título */
+    margin-bottom: 15px;
+    color: #5c99e0;
+}
+
+/* Parágrafos da seção */
+#sobre p {
+    font-size: 1.1rem; /* AQUI você altera o tamanho do texto dos parágrafos */
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
